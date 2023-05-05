@@ -669,14 +669,14 @@ body {
 
 
 .contacto__item h3 {
-    color: #0c332b;
+    color: #10493e;
     margin-bottom: 10px;
     margin-top: 16px;
     text-align: center;
 }
 
 .contacto__item p {
-    color: #0c332b;
+    color: #0b312a;
     text-align: center;
 }
 
@@ -796,6 +796,7 @@ body {
     border: none;
     letter-spacing: 2px;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .form--boton input:hover {
