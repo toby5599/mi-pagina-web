@@ -8,7 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 }
 
-$destinatario = "tobiasdoyelbenitez@gmail.com";
+$destinatario = "contacto.tobiasbenitez@gmail.com";
 $asunto = "Nuevo mensaje de mi pagina web";
 $cuerpo = "Nombre: $nombre\nEmail: $email\nNumero: $numero\nMensaje:\n$mensaje";
 
