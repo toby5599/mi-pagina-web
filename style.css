@@ -1169,7 +1169,7 @@ margin: 0;
 }
 
 .habilidades__iconos__contenedor {
-    width: 100%;
+    min-width: 90%;
 }
 
 .habilidades__titulo {
@@ -1563,7 +1563,7 @@ margin: 0;
     }
 
     .habilidades__iconos__contenedor {
-        width: 100%;
+        max-width: 90%;
     }
 
 /*------------SERVICIOS-TABLET----------------------*/
