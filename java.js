@@ -95,4 +95,8 @@ window.addEventListener("scroll",()=> {
         navBar.classList.remove("scrolled");
         logo.classList.remove("logo-activo");
     }
-})
+});
+
+function mostrarRespuesta(respuesta) {
+    document.getElementById("respuesta").innerHTML = respuesta;
+}
