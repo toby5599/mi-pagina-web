@@ -6,30 +6,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $numero = $_POST["numero"];
     $mensaje = $_POST["mensaje"];
 
+}
+
+$destinatario = "contacto.tobiasbenitez@gmail.com";
+$asunto = "Nuevo mensaje de mi pagina web";
+$cuerpo = "Nombre: $nombre\nEmail: $email\nNumero: $numero\nMensaje:\n$mensaje";
 
 
-    $destinatario = "contacto.tobiasbenitez@gmail.com";
-    $asunto = "Nuevo mensaje de mi pagina web";
-    $cuerpo = "Nombre: $nombre\nEmail: $email\nNumero: $numero\nMensaje:\n$mensaje";
+if (@mail($destinatario, $asunto, $cuerpo)) {
+    echo "gracias por contactarme, $nombre. Tu mensaje ha sido enviado correctamente.";
+}
 
-
-    if (@mail($destinatario, $asunto, $cuerpo)) {
-        $respuesta = "gracias por contactarme, $nombre. Tu mensaje ha sido enviado correctamente.";
-    }
-
-    else {
-        $respuesta = "Lo siento, hubo un problema al enviar tu mensaje";
-    }
-
-    echo "<script>mostrarRespuesta('$respuesta')</script>";
-
+else {
+    echo "Lo siento, hubo un problema al enviar tu mensaje";
 }
 
 ?>
-
-
-<html>
-    <head>
-        <script src="java.js"></script>
-    </head>
-</html>

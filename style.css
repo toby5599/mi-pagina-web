@@ -294,7 +294,7 @@ body {
 }
 
 .habilidades__iconos__contenedor {
-    max-width: 100%;
+    min-width: 100%;
     margin-top: 50px;
     margin-bottom: 50px;
     display: grid;
@@ -736,6 +736,23 @@ body {
 	margin: 0;
 }
 
+.form--numero input::-webkit-inner-spin-button,
+.form--numero input::-webkit-outer-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+
+/* Para Firefox */
+.form--numero input[type=number] {
+-moz-appearance: textfield;
+}
+
+/* Para IE y Edge */
+.form--numero input[type=number]::-webkit-inner-spin-button,
+.form--numero input[type=number]::-webkit-outer-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
 
 .form input::placeholder {
     color: #0c332b;
@@ -939,18 +956,6 @@ body {
     color: #bbb;
     font-size: 14px;
 }
-
-#respuesta {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    padding: 10px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-    z-index: 9999;
-  }
 
 
 /*---------------------------------VERSION-MOBILE----------------------------------------*/

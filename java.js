@@ -96,7 +96,3 @@ window.addEventListener("scroll",()=> {
         logo.classList.remove("logo-activo");
     }
 });
-
-function mostrarRespuesta(respuesta) {
-    document.getElementById("respuesta").innerHTML = respuesta;
-}
