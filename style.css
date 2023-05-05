@@ -294,7 +294,7 @@ body {
 }
 
 .habilidades__iconos__contenedor {
-    min-width: 100%;
+    min-width: 65%;
     margin-top: 50px;
     margin-bottom: 50px;
     display: grid;
