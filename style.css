@@ -173,6 +173,7 @@ body {
     align-items: center;
     justify-content: center;
     margin: 0 25px;
+    width: 70%;
 }
 
 
@@ -180,7 +181,7 @@ body {
     font-size: 2.5rem;
     color: #fff;
     font-weight: lighter;
-    margin-bottom: 8px;
+    margin-bottom: 18px;
     text-align: center;
     font-weight: 400;
 }
@@ -190,6 +191,7 @@ body {
     color: #fff;
     text-align: center;
     font-weight: 400;
+    line-height: 40px;
 }
 
 .presentacion__iconos {
@@ -1136,6 +1138,10 @@ margin: 0;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
 }
 
+.presentacion__items {
+    width: 95%;
+}
+
 .presentacion--titulo {
     font-size: 2.8rem;
     display: flex;
@@ -1150,6 +1156,7 @@ margin: 0;
 .presentacion--parrafo {
     font-size: 1.9rem;
     text-align: center;
+    line-height: 30px;
 }
 
 
@@ -1478,7 +1485,7 @@ margin: 0;
     margin-top: 0;
     position: fixed;
     z-index: 5;
-    margin-bottom: 46px;
+    margin-bottom: 65px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -1542,6 +1549,10 @@ margin: 0;
 }
 
 /*----------------PRESENTACION-TABLET-------------------------*/
+
+    .presentacion__items {
+        width: 92%;
+    }
 
     .presentacion--titulo {
         font-size: 2.4rem;
@@ -1657,7 +1668,7 @@ margin: 0;
 /*-------------CONTACTO-TABLET------------*/
 
     .contacto__contenedor {
-        grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+        grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
         width: 100%;
         grid-row-gap: 40px;
         padding-left: 15px;
